@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4646AC4-27E1-4D51-AD50-A122989B2582}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestLibrary</RootNamespace>
+    <AssemblyName>TestLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BAccessTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\BAwardWinner.cs" />
+    <Compile Include="BLL\BEDM.cs" />
+    <Compile Include="BLL\BFeeP.cs" />
+    <Compile Include="BLL\BMemberG.cs" />
+    <Compile Include="BLL\BMemberP.cs" />
+    <Compile Include="BLL\BOnSiteRegistration.cs" />
+    <Compile Include="BLL\BPaper.cs" />
+    <Compile Include="BLL\BPaperDomainSeq.cs" />
+    <Compile Include="BLL\BPaperSuggestion.cs" />
+    <Compile Include="BLL\BReceipt.cs" />
+    <Compile Include="BLL\BRegister.cs" />
+    <Compile Include="BLL\BUser.cs" />
+    <Compile Include="BLL\BVote.cs" />
+    <Compile Include="Common\AnnualMettingSecurity.cs" />
+    <Compile Include="Common\CheckSaveMsg.cs" />
+    <Compile Include="Common\Security.cs" />
+    <Compile Include="Common\SQLOle.cs" />
+    <Compile Include="Common\SQLUtil.cs" />
+    <Compile Include="Common\Util.cs" />
+    <Compile Include="Common\Validations.cs" />
+    <Compile Include="DAL\DAccessTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAL\DAwardWinner.cs" />
+    <Compile Include="DAL\DEDM.cs" />
+    <Compile Include="DAL\DFeeP.cs" />
+    <Compile Include="DAL\DMemberG.cs" />
+    <Compile Include="DAL\DMemberP.cs" />
+    <Compile Include="DAL\DOnSiteRegistration.cs" />
+    <Compile Include="DAL\DPaper.cs" />
+    <Compile Include="DAL\DPaperDomainSeq.cs" />
+    <Compile Include="DAL\DPaperSuggestion.cs" />
+    <Compile Include="DAL\DReceipt.cs" />
+    <Compile Include="DAL\DRegister.cs" />
+    <Compile Include="DAL\DUser.cs" />
+    <Compile Include="DAL\DVote.cs" />
+    <Compile Include="Models\MAwardWinner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\MEDM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\MFeeP.cs" />
+    <Compile Include="Models\MMemberG.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\MMemberP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\MOnSiteRegistration.cs" />
+    <Compile Include="Models\MPaper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\MPaperDomainSeq.cs" />
+    <Compile Include="Models\MPaperSuggestion.cs" />
+    <Compile Include="Models\MReceipt.cs" />
+    <Compile Include="Models\MRegister.cs" />
+    <Compile Include="Models\MUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\MVote.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
